@@ -1,0 +1,19 @@
+meta {
+  name: demo2
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/change-signal
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {"signalId":"junction-12","status":"GREEN","priority":true}
+}
+
+settings {
+  encodeUrl: true
+}
